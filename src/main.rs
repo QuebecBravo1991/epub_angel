@@ -15,7 +15,16 @@ struct Args {
     language: Option<String>,
 }
 
+fn unzip(input: &String) {}
+
+fn clean(lang: &Option<String>) {}
+
+fn rezip(output: &Option<String>) {}
+
 fn main() {
     let args = Args::parse();
-    println!("{:#?}", args)
+
+    unzip(&args.input);
+    clean(&args.language);
+    rezip(&args.output);
 }
